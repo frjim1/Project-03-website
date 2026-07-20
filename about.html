@@ -1,0 +1,132 @@
+:root{
+  --bg: #f7f7f8;
+  --card: #ffffff;
+  --accent: #6b4f3b;
+  --muted: #6b6b6b;
+  --shadow: rgba(16,24,40,0.06);
+  --max-w: 900px;
+  --radius: 12px;
+  --brand-start: #8b5e3c;
+  --brand-end: #caa07f;
+  --font-sans: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family:var(--font-sans);
+  background:var(--bg);
+  color:#111;
+  display:flex;
+  align-items:flex-start;
+  justify-content:center;
+  padding:48px 16px;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+.container{
+  width:100%;
+  max-width:var(--max-w);
+}
+
+/* Header */
+header{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  margin-bottom:20px;
+}
+
+.brand{
+  height:56px;
+  width:56px;
+  background:linear-gradient(135deg, var(--brand-start), var(--brand-end));
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-weight:700;
+  font-size:18px;
+  box-shadow:0 6px 18px rgba(107,79,59,0.12);
+  flex-shrink:0;
+}
+
+h1{
+  margin:0;
+  font-size:20px;
+  line-height:1.1;
+}
+
+p.lead{
+  margin:6px 0 0;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* Main card */
+main{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:26px;
+  box-shadow:0 8px 24px var(--shadow);
+  overflow:hidden;
+}
+
+section{margin-bottom:18px}
+section:last-child{margin-bottom:0}
+
+h2{
+  font-size:16px;
+  margin:0 0 8px;
+  color:var(--accent);
+  font-weight:600;
+}
+
+p, li{
+  color:#222;
+  line-height:1.45;
+  font-size:15px;
+}
+
+ul{
+  margin:6px 0 0 20px;
+  padding:0;
+}
+
+.meta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  color:var(--muted);
+  font-size:13px;
+}
+
+code{
+  background:#f2f2f2;
+  padding:2px 6px;
+  border-radius:6px;
+  font-family:ui-monospace, SFMono-Regular, "Roboto Mono", "Courier New", monospace;
+  font-size:13px;
+}
+
+/* Footer */
+footer{
+  margin-top:18px;
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* Utility */
+.container .small{font-size:13px;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:520px){
+  body{padding:20px}
+  .brand{height:48px;width:48px;font-size:16px}
+  main{padding:18px}
+  h1{font-size:18px}
+  h2{font-size:15px}
+}
