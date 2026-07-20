@@ -8,4 +8,7 @@ This project is a two-page website created using HTML and CSS. The purpose of th
 * Simple and organized website layout
 ## Live Website
 https://frjim1.github.io/Project-03-website/
-
+## Documentation
+* [Project Scope](docs/scope.md)
+* [Project Plan](docs/plan.md)
+* [Project Retrospective](docs/retrospective.md)
