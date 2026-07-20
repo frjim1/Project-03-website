@@ -7,5 +7,5 @@ This project is a two-page website created using HTML and CSS. The purpose of th
 * External CSS stylesheet for consisten design
 * Simple and organized website layout
 ## Live Website
-https://frjim1.github.io/project-03-website/
+https://frjim1.github.io/Project-03-website/
 
